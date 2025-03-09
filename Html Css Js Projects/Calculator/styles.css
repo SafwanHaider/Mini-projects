@@ -1,0 +1,97 @@
+/* Ensure body is a flex column to align both h1 and the calculator */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Delius+Unicase:wght@400;700&display=swap');
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: "Dancing Script", cursive;
+    display: flex;
+    flex-direction: column; /* Stack h1 and calculator vertically */
+    justify-content: center; /* Center everything vertically */
+    align-items: center; /* Center everything horizontally */
+    background: linear-gradient(rgb(139, 208, 236), rgb(232, 154, 154));
+}
+
+/* Center h1 properly above the calculator */
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px; /* Space between h1 and calculator */
+    font-size: 32px; /* Make it stand out */
+    position: relative;
+    top: -50px; /* Move h1 slightly upward */
+}
+
+/* Center calculator container */
+.container {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Add spacing between buttons */
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px; /* Adds uniform spacing between buttons */
+    margin: 8px 0;
+}
+
+/* Styling input field */
+.row input {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid black;
+    border-radius: 12px;
+    font-size: 24px;
+    text-align: right;
+}
+
+/* Ensure buttons are uniform */
+.button {
+    flex: 1;
+    padding: 20px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    background-color: white;
+    transition: 0.3s;
+    box-sizing: border-box;
+    min-width: 80px;
+    min-height: 60px;
+    transition: transform 0.1s ease-in-out; 
+}
+
+/* Hover effect */
+.button:hover {
+    background-color: lightgray;
+}
+.button-clicked {
+    transform: scale(0.9);
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .container {
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        top: -30px; /* Adjust positioning for smaller screens */
+    }
+
+    .button {
+        font-size: 18px;
+        min-width: 60px;
+        min-height: 50px;
+    }
+
+    .row input {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,28 @@
+.text-center{
+    text-align: center;
+}
+.bg-sky{
+    background-color: skyblue;
+}
+.main-container{
+    
+}
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg-red{
+    background-color: red;
+}
+.row{
+    margin: 8px 2px;
+}
+.row input{
+    width: 100%;
+    margin: 0;
+    padding: 16px 0;
+    border: 2px solid black;
+    border-radius: 12px;
+    font-size: 24px;
+}
