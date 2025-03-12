@@ -1,4 +1,3 @@
-/* Ensure body is a flex column to align both h1 and the calculator */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Delius+Unicase:wght@400;700&display=swap');
 html, body {
     height: 100%;
@@ -6,8 +5,8 @@ html, body {
     font-family: "Dancing Script", cursive;
     display: flex;
     flex-direction: column; /* Stack h1 and calculator vertically */
-    justify-content: center; /* Center everything vertically */
-    align-items: center; /* Center everything horizontally */
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(rgb(139, 208, 236), rgb(232, 154, 154));
 }
 
